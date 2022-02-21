@@ -1,5 +1,6 @@
 # deploy
-1. run in ./docker directory "docker-compose up"
+check ports in docker-compose.yml, 80 should be not busy. Change if need.
+1. run in ./docker directory "docker-compose up" and see in docker_php log for know host ip
 # database
 1. for migrations run "docker exec -it docker_php_1 php migrations.php"
 2. for filling test data run "docker exec -it docker_php_1 php seeds.php"
